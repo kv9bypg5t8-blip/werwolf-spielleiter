@@ -1,16 +1,13 @@
-WERWOLF – iPHONE-LAYOUTKORREKTUR v18
+WERWOLF – BÜRGERMEISTER-KRONE AM KARTENRAND v19
 
-Behoben:
-- Im Hochformat erscheint auf der Spielerkarte nur noch eine kompakte goldene Krone oben rechts.
-- Der Text „Bürgermeister“ liegt nicht mehr über dem Spielernamen.
-- In der Spielerübersicht bleibt die Bürgermeister-Krone sichtbar.
-- Im iPhone-Querformat wird „Rolle überspringen“ rechts oben angeordnet.
-- Der unterste Spieler wird dadurch nicht mehr vom Button verdeckt.
-- Der Spielerkreis wird im Querformat leicht nach oben gesetzt.
+Geändert:
+- Die Krone sitzt jetzt rechts oben auf dem äußeren Rand der Spielerkarte.
+- Die Krone liegt zur Hälfte außerhalb der Karte und belegt keinen Platz im Namensbereich.
+- Der Spielername erhält auf dem iPhone wieder die volle verfügbare Kartenbreite.
+- Die Querformat-Korrektur für „Rolle überspringen“ aus v18 bleibt bestehen.
 
-Installation auf Basis der Bürgermeister-Version:
+Installation auf Basis der bisherigen Bürgermeister-Version:
 1. mayor-update.css ersetzen.
 2. sw.js ersetzen.
-3. Alle anderen Dateien unverändert beibehalten.
-4. Auf GitHub committen und die Web-App neu laden.
-5. Falls weiterhin die alte Darstellung erscheint, die PWA vollständig schließen oder neu installieren.
+3. Alle anderen Dateien unverändert lassen.
+4. Committen und PWA neu laden.
