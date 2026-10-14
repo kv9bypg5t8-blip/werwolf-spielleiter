@@ -1,12 +1,16 @@
-BÜRGERMEISTER-UPDATE FÜR WERWOLF PWA v16
+WERWOLF – iPHONE-LAYOUTKORREKTUR v18
 
-- Sichtbare Krone „♛ Bürgermeister“ auf der Spielerkarte.
-- Krone auch in der Spielerübersicht.
-- Die vorhandene zufällige Auswahl beim Spielstart bleibt erhalten.
-- Die vorhandene zufällige Weitergabe beim Tod bleibt erhalten.
+Behoben:
+- Im Hochformat erscheint auf der Spielerkarte nur noch eine kompakte goldene Krone oben rechts.
+- Der Text „Bürgermeister“ liegt nicht mehr über dem Spielernamen.
+- In der Spielerübersicht bleibt die Bürgermeister-Krone sichtbar.
+- Im iPhone-Querformat wird „Rolle überspringen“ rechts oben angeordnet.
+- Der unterste Spieler wird dadurch nicht mehr vom Button verdeckt.
+- Der Spielerkreis wird im Querformat leicht nach oben gesetzt.
 
-Anwendung auf die vollständige v16:
-1. index.html und sw.js ersetzen.
-2. mayor-update.js und mayor-update.css neu hochladen.
-3. Alle übrigen Dateien der v16 beibehalten.
-4. Committen und PWA neu laden.
+Installation auf Basis der Bürgermeister-Version:
+1. mayor-update.css ersetzen.
+2. sw.js ersetzen.
+3. Alle anderen Dateien unverändert beibehalten.
+4. Auf GitHub committen und die Web-App neu laden.
+5. Falls weiterhin die alte Darstellung erscheint, die PWA vollständig schließen oder neu installieren.
