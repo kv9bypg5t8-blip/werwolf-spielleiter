@@ -1,15 +1,15 @@
-WERWOLF – NEUES-SPIEL-HOTFIX
+WERWOLF – iPHONE/AMOR-FIX
 
-Neu:
-- Oben im Spiel erscheint „↻ Neues Spiel“.
-- „Mit denselben Spielern“ setzt Rollen, Bürgermeister, Liebespaar, Tote, Tränke, Protokoll und Runde zurück; die Teilnehmernamen bleiben erhalten und Nacht 1 beginnt neu.
-- „Komplett neues Spiel“ löscht den lokalen Spielstand und kehrt zur Teilnehmer-Eingabe zurück.
-- „Abbrechen“ schließt den Dialog ohne Änderung.
-- Bestehender Kreis- und Tagmodus-Fix bleibt erhalten.
+Behoben:
+- Amor wird auf iPhone/Safari mit einem einzelnen Tippen zugeordnet.
+- iOS-Doppelklicks innerhalb von 350 ms werden abgefangen.
+- Die App wechselt nach der Zuordnung zuverlässig zur Liebespaar-Auswahl.
+- Amor selbst bleibt gesperrt und kann nicht Teil des Liebespaares sein.
 
 GitHub:
-1. index.html, sw.js und hotfix.css ersetzen.
-2. newgame.js neu ins Hauptverzeichnis hochladen.
-3. Commit changes.
-4. GitHub-Pages-Seite einmal direkt neu laden.
-5. PWA vollständig schließen und erneut starten.
+1. index.html und sw.js ersetzen.
+2. amorfix.js neu hochladen.
+3. hotfix.css und newgame.js müssen weiterhin vorhanden sein.
+4. Commit changes.
+5. Webseite in Safari neu laden, PWA schließen und neu starten.
+6. Bei alter Cache-Version die PWA entfernen und erneut installieren.
