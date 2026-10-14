@@ -1,11 +1,12 @@
-WERWOLF PWA v16 – VOLLSTÄNDIGE VERSION
+BÜRGERMEISTER-UPDATE FÜR WERWOLF PWA v16
 
-- Rollensymbole als dunkles Wasserzeichen hinter transparenten Spielernamen
-- breitere, flachere Spielerkarten
-- kleinere zentrale Rollenkarte und kompaktere Aktionsfläche
-- mehr Platz für den Spielerkreis, oberste Karte bleibt frei
-- Nachtbild ohne großflächige transparente Ebene, zentriert und cover
-- Spielerübersicht mit bestätigtem Töten/Wiederbeleben
-- tote Spieler grau mit Totenkopf
-- Rollenlogik, Werwolfopfer, Hexe, Jäger, Tagrunde, Siegprüfung und neues Spiel
-- Offline-PWA, alle Funktionen in app.js, alle Styles in styles.css, keine Hotfix-Dateien
+- Sichtbare Krone „♛ Bürgermeister“ auf der Spielerkarte.
+- Krone auch in der Spielerübersicht.
+- Die vorhandene zufällige Auswahl beim Spielstart bleibt erhalten.
+- Die vorhandene zufällige Weitergabe beim Tod bleibt erhalten.
+
+Anwendung auf die vollständige v16:
+1. index.html und sw.js ersetzen.
+2. mayor-update.js und mayor-update.css neu hochladen.
+3. Alle übrigen Dateien der v16 beibehalten.
+4. Committen und PWA neu laden.
