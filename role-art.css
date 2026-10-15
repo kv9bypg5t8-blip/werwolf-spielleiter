@@ -6,3 +6,13 @@
 @media (orientation:portrait) and (max-width:650px){.rolecard.has-role-image{width:clamp(150px,24dvh,210px)!important;max-width:48vw!important;max-height:30dvh!important}}
 @media (orientation:landscape) and (max-height:650px){.rolecard.has-role-image{width:clamp(135px,32dvh,205px)!important;max-width:25vw!important;max-height:38dvh!important}.player{z-index:10!important}}
 @media (min-width:900px) and (min-height:700px){.rolecard.has-role-image{width:clamp(220px,28dvh,320px)!important;max-width:32vw!important}}
+
+/* v24: Rollenbezeichnung ist bereits Bestandteil der gelieferten Bilder. */
+.rolecard.has-role-image .title{
+  display:none!important;
+}
+.rolecard.has-role-image::after{
+  display:none!important;
+  content:none!important;
+  background:none!important;
+}
