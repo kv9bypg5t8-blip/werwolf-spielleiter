@@ -1,6 +1,6 @@
 'use strict';
 const R={Amor:{o:1,i:'🏹',c:'#c6537d',a:'Bestimmt genau zwei Personen als Liebespaar.',t:'good',first:1},Dorfmatratze:{o:2,i:'🛏️',c:'#527bc2',a:'Wählt einen Schlafplatz.',t:'good'},Werwolf:{o:3,i:'🐺',c:'#b03845',a:'Wählt genau ein Opfer.',t:'evil'},Seher:{o:4,i:'🔮',c:'#9d67d8',a:'Prüft eine Person auf gut oder böse.',t:'good'},Hexe:{o:5,i:'🧪',c:'#77e34c',a:'Kann einmal heilen und einmal vergiften.',t:'good'},Jäger:{o:6,i:'🏹',c:'#c17a42',a:'Nimmt beim Tod eine Person mit.',t:'good'},Dorfbewohner:{o:7,i:'🏠',c:'#aaa294',a:'Passive Rolle.',t:'good',passive:1}};
-const LABEL={Hexe:'Hexe/r',Seher:'Seher/in','Jäger':'Jäger/in',Bürgermeister:'Bürgermeister/in'};
+const LABEL={Hexe:'Hexe/r',Seher:'Seher/in','Jäger':'Jäger/in',Dorfbewohner:'Dorfbewohner/in',Bürgermeister:'Bürgermeister/in'};
 const IMG={Amor:'amor.png',Dorfmatratze:'dorfmatratze.png',Werwolf:'werwolf_rolle.png',Seher:'seher.png',Hexe:'hexe.png','Jäger':'jaeger.png'};
 const ST={A:'assign',L:'lovers',M:'mat',W:'wolves',V:'victim',S:'seer',H:'witch',P:'poison',D:'done',DAY:'day',PICK:'pick'},KEY='werwolf-ui-v16';
 const fresh=()=>({screen:'setup',players:[],phase:'setup',night:0,role:null,step:null,mayor:null,lovers:[],act:{},pot:{heal:1,poison:1},dayVote:null,dayDone:0,log:[],hist:[],modal:null,queue:[],pendingHunters:[],drawer:0,over:0,privateMode:0});let G=load()||fresh();G.pendingHunters=G.pendingHunters||[];
