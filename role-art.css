@@ -1,36 +1,8 @@
-/* Rollenbild im Zentrum */
-.rolecard.has-role-image{
-  background-image:var(--role-image)!important;
-  background-position:center center!important;
-  background-size:cover!important;
-  background-repeat:no-repeat!important;
-  overflow:hidden;
-}
-.rolecard.has-role-image::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(to bottom,transparent 52%,rgba(0,0,0,.72) 100%);
-  pointer-events:none;
-}
-.rolecard.has-role-image .big{opacity:0!important}
-.rolecard.has-role-image .title{z-index:2;color:#fff!important;text-shadow:0 2px 6px #000,0 0 7px #000}
-
-/* Interaktionsfenster vollständig transparent, Rollenbild bleibt sichtbar. */
-.prompt{
-  background:transparent!important;
-  background-image:none!important;
-  border-color:transparent!important;
-  box-shadow:none!important;
-  backdrop-filter:none!important;
-  -webkit-backdrop-filter:none!important;
-}
-.prompt h2,.prompt p,.prompt .ability{
-  text-shadow:0 2px 5px #000,0 0 8px #000;
-}
-.prompt .ability{border-top-color:#ffffff80!important}
-
-@media(max-width:650px){
-  .rolecard.has-role-image{width:min(18dvh,140px)!important}
-  .prompt{width:min(215px,27dvh)!important}
-}
+.rolecard.has-role-image{background-image:var(--role-image)!important;background-position:center!important;background-size:cover!important;background-repeat:no-repeat!important;overflow:hidden;width:clamp(170px,min(27dvh,27vw),300px)!important;max-width:min(42vw,300px)!important;max-height:42dvh!important;z-index:2!important}
+.rolecard.has-role-image::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,transparent 60%,rgba(0,0,0,.68) 100%);pointer-events:none}
+.rolecard.has-role-image .big{opacity:0!important}.rolecard.has-role-image .title{z-index:2;color:#fff!important;text-shadow:0 2px 6px #000,0 0 7px #000}
+.prompt{background:transparent!important;background-image:none!important;border-color:transparent!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;z-index:6!important}.prompt h2,.prompt .ability{display:none!important}.prompt p{text-shadow:0 2px 5px #000,0 0 8px #000;font-weight:800}
+.player{z-index:10!important}.player .role-watermark,.player .player-name,.player .role-name,.player .tags{z-index:11}.mayor-badge{z-index:14!important}
+@media (orientation:portrait) and (max-width:650px){.rolecard.has-role-image{width:clamp(150px,24dvh,210px)!important;max-width:48vw!important;max-height:30dvh!important}}
+@media (orientation:landscape) and (max-height:650px){.rolecard.has-role-image{width:clamp(135px,32dvh,205px)!important;max-width:25vw!important;max-height:38dvh!important}.player{z-index:10!important}}
+@media (min-width:900px) and (min-height:700px){.rolecard.has-role-image{width:clamp(220px,28dvh,320px)!important;max-width:32vw!important}}
