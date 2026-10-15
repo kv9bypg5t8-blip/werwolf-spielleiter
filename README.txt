@@ -1,23 +1,18 @@
-WERWOLF UPDATE v24
+WERWOLF – SIEGBEDINGUNGEN v25
 
-Enthält alle Änderungen aus v23 und entfernt zusätzlich die von der App erzeugte Rollenbezeichnung am unteren Rand der Rollenkarte.
+Priorität:
+1. Liebespaar gewinnt, wenn beide Verliebten leben und insgesamt höchstens drei Spieler leben. Damit gewinnt das Liebespaar allein oder zusammen mit genau einem weiteren Spieler.
+2. Dorf gewinnt, wenn kein Werwolf mehr lebt.
+3. Sonderfall: Leben genau ein Werwolf und ein Nicht-Werwolf und ist der Nicht-Werwolf Bürgermeister, gewinnt das Dorf.
+4. Werwölfe gewinnen, sobald nur noch ein Nicht-Werwolf lebt.
 
-Damit stammt die sichtbare Rollenbezeichnung ausschließlich aus den selbst bereitgestellten PNG-Bildern.
+Beispiele:
+- 2 Wölfe + 1 Dorfbewohner: Werwölfe gewinnen.
+- 1 Wolf + 1 Dorfbewohner: Werwölfe gewinnen.
+- 1 Wolf + 1 Bürgermeister auf Dorfseite: Dorf gewinnt.
+- 2 lebende Verliebte + 1 weiterer Spieler: Liebespaar gewinnt.
 
-Weiterhin enthalten:
-- responsive größere Rollenbilder
-- Spielerkarten immer vor der Rollenkarte
-- transparentes Aktionsfenster
-- keine doppelte Rollenbezeichnung im Aktionsfenster
-- Amor -> liebespaar.png bei der Partnerwahl
-- dorfmatratze.png als eigenes Rollenbild
-- verbundene Heilung für Dorfmatratze und Liebespaar
-- verzögerte Jägeraktion nach nächtlichem Tod
-
-ZU TAUSCHEN
-- index.html
-- sw.js
-- role-art.js
-- role-art.css
-
-Die Rollenbilder selbst bleiben unverändert.
+Installation auf Basis v24:
+1. index.html und sw.js ersetzen.
+2. win-rules.js neu ins Hauptverzeichnis hochladen.
+3. Alle übrigen Dateien unverändert beibehalten.
