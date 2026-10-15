@@ -1,19 +1,22 @@
-WERWOLF – TAGRUNDEN-HINTERGRUND v28
+WERWOLF – TAGRUNDEN-HINTERGRUND FIX v29
 
-NEU
-- In der Tagphase wird tagrunde.png als vollflaechiger Hintergrund verwendet.
-- Das Bild wird zentriert und per cover an Hoch- und Querformat angepasst.
-- Nachtphase und bisheriger night-background.png bleiben unveraendert.
-- tagrunde.png wird in den Offline-PWA-Cache aufgenommen.
+URSACHE
+Die App setzt bereits die Klassen .shell.night und .shell.day. Der vorherige Fix legte tagrunde.png auf body. Der vollflaechige Pseudo-Hintergrund .shell::before lag darueber, weshalb weiterhin der bisherige Hintergrund sichtbar war. Das Mondsymbol war ausserdem in app.js fest eingetragen.
 
-INSTALLATION AUF BASIS v27
-1. index.html ersetzen.
-2. sw.js ersetzen.
-3. day-background.css neu hochladen.
-4. day-background.js neu hochladen.
-5. tagrunde.png selbst direkt ins Hauptverzeichnis hochladen.
-6. Alle anderen Dateien unveraendert beibehalten.
+BEHOBEN
+- tagrunde.png wird jetzt direkt auf .shell.day::before gesetzt.
+- night-background.png bleibt fuer .shell.night unveraendert.
+- Tagesbild bleibt zentriert, unverzerrt und per cover vollflaechig.
+- In der Tagrunde wird oben eine Sonne angezeigt.
+- In der Nachtrunde wird weiterhin der Mond angezeigt.
+- tagrunde.png bleibt Bestandteil des Offline-Caches.
 
-Empfehlung fuer tagrunde.png:
-- Querformat, z. B. 1920 x 1080 oder 2560 x 1440 px.
-- Das Hauptmotiv moeglichst mittig halten, weil background-size: cover auf schmalen Hochformat-Geraeten seitlich beschneidet.
+ZU TAUSCHEN
+- index.html
+- sw.js
+- day-background.css
+- day-background.js
+
+ZUSAETZLICH
+- tagrunde.png muss direkt im Hauptverzeichnis liegen.
+- Cache-Version: werwolf-ui-v29-day-background-fix
