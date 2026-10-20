@@ -23,3 +23,19 @@
   .bottom{bottom:max(2px,env(safe-area-inset-bottom))!important}
   .bottom .btn{min-height:28px;padding:4px 7px;font-size:10px}
 }
+
+
+/* v33: iPhone-Querformat und Aktionsposition */
+@media (orientation:landscape) and (max-height:500px) and (max-width:950px){
+  .player{padding:4px;border-radius:9px}
+  .role-name{font-size:8px;bottom:3px}
+  .player-name{font-size:min(var(--nfs),12px)}
+  .ring{top:48%!important}
+  .rolecard.has-role-image{width:clamp(104px,27dvh,138px)!important;max-width:21vw!important;max-height:34dvh!important}
+  .prompt{top:35%!important;width:min(190px,38dvh)!important;max-height:24dvh!important;overflow:visible!important}
+  .prompt p{font-size:9px!important;margin:1px 0 3px!important}
+  .prompt .row{justify-content:center;gap:2px!important}
+  .prompt .btn{min-height:23px!important;padding:2px 5px!important;font-size:8.5px!important}
+  .bottom{bottom:max(1px,env(safe-area-inset-bottom))!important}
+  .bottom .btn{min-height:25px!important;font-size:9px!important}
+}
